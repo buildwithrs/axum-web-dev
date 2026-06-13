@@ -1,0 +1,12 @@
+### path query
+GET http://127.0.0.1:8080/api/users/1001
+
+### post user
+POST http://127.0.0.1:8080/api/users
+content-type: application/json
+
+{"id":"1001", "name":"Alice"}
+
+
+### URL query
+GET http://127.0.0.1:8080/api/posts?offset=0&limit=100

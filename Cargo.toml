@@ -6,6 +6,8 @@ members = [
     "crates/domain",
     "crates/share-state",
     "crates/request-extractor",
+    "crates/middleware", 
+    "crates/error-handling",
 ]
 
 [workspace.package]
@@ -24,6 +26,7 @@ domain = { path = "crates/domain" }
 axum = "0.8"
 tower = "0.5"
 tower-http = { version = "0.6", features = ["trace", "cors"] }
+futures-util = "0.3"
 
 # Async runtime
 tokio = { version = "1", features = ["full"] }

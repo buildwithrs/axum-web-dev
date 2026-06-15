@@ -1,5 +1,5 @@
 ### path query
-GET http://127.0.0.1:8080/api/users/1001
+GET http://127.0.0.1:8080/api/users/1002
 
 ### post user
 POST http://127.0.0.1:8080/api/users

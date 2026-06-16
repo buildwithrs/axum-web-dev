@@ -11,6 +11,7 @@ members = [
     "crates/route-group",
     "crates/handler-test",
     "crates/tracing-logging",
+    "crates/websocket",
 ]
 
 [workspace.package]
@@ -26,7 +27,7 @@ api = { path = "crates/api" }
 domain = { path = "crates/domain" }
 
 # Web framework
-axum = "0.8"
+axum = { version = "0.8", features = ["default", "ws"] }
 tower = "0.5"
 tower-http = { version = "0.6", features = ["trace", "cors"] }
 futures-util = "0.3"

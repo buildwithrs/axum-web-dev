@@ -1,0 +1,26 @@
+### path query
+GET http://127.0.0.1:8181/api/u/users/1001
+
+### post user
+POST http://127.0.0.1:8181/api/u/users
+content-type: application/json
+
+{"id":"1001x", "name":"Alice"}
+
+
+### URL query
+GET http://127.0.0.1:8181/api/u/posts?offset=0&limit=100
+
+
+### GET Product
+GET http://127.0.0.1:8181/api/p/products/9090
+
+### post product
+POST http://127.0.0.1:8181/api/p/products
+content-type: application/json
+
+{"product": {"id": "145646", "kind": "electric", "attributes": {}, "name": "macbook"}}
+
+
+### URL query
+GET http://127.0.0.1:8181/api/p/products?offset=0&limit=100

@@ -10,6 +10,7 @@ members = [
     "crates/error-handling", 
     "crates/route-group",
     "crates/handler-test",
+    "crates/tracing-logging",
 ]
 
 [workspace.package]
@@ -43,7 +44,9 @@ thiserror = "2"
 
 # Tracing / logging
 tracing = "0.1"
-tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json", "fmt"] }
+
+uuid = { version = "1.23.3", features = ["v4"] }
 
 [profile.release]
 lto = "thin"

@@ -305,6 +305,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "handler-test"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "axum",
+ "serde",
+ "serde_json",
+ "thiserror",
+ "tokio",
+ "tower",
+]
+
+[[package]]
 name = "http"
 version = "1.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -750,6 +763,18 @@ dependencies = [
  "axum",
  "serde",
  "serde_json",
+ "tokio",
+]
+
+[[package]]
+name = "route-group"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "axum",
+ "serde",
+ "serde_json",
+ "thiserror",
  "tokio",
 ]
 

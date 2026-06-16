@@ -7,7 +7,9 @@ members = [
     "crates/share-state",
     "crates/request-extractor",
     "crates/middleware", 
-    "crates/error-handling",
+    "crates/error-handling", 
+    "crates/route-group",
+    "crates/handler-test",
 ]
 
 [workspace.package]

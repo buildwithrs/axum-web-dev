@@ -12,7 +12,7 @@ members = [
     "crates/handler-test",
     "crates/tracing-logging",
     "crates/websocket",
-    "crates/file-upload",
+    "crates/file-upload", "crates/tls-support",
 ]
 
 [workspace.package]

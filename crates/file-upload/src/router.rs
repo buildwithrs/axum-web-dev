@@ -27,9 +27,6 @@ async fn upload_handler(mut multipart: Multipart) -> Result<impl IntoResponse, A
         let Some(f_name) = field.file_name() else {
             continue;
         };
-        // let mut data = field.bytes().await.unwrap();
-
-        // info!("Length of `{}` is {} bytes", name, data.len());
 
         let name = safe_name(f_name);
         let path = PathBuf::from(FILE_PATH).join(name);
